@@ -147,7 +147,7 @@
 <body style="background-color:#ffffff;">
   <div class="topnav" id="myTopnav">
     <div>
-      <a href="https://www.nvidia.com/"><img width="100%" src="assets/nvidia.svg" /></a>
+      <a href="https://www.nvidia.com/"><img width="100%" src="imgs/nvidia.svg" /></a>
       <a href="https://nv-tlabs.github.io/"><strong>Toronto AI Lab</strong></a>
     </div>
   </div>
@@ -157,16 +157,16 @@
     </h1>
   </div>
   <div class="authors" , style="text-align: center;">
-    <a href="https://hassanhaija.com" target="_blank">Hassan Abu Alhaija<sup>1</sup></a>
-    <a href="" target="_blank">Alara Dirik<sup>3</sup></a>
-    <a href="" target="_blank">André Knörig<sup>3</sup></a>
+    <a href="http://hassanhaija.com" target="_blank">Hassan Abu Alhaija<sup>1</sup></a>
+    <a href="https://pch-innovations.com/" target="_blank">Alara Dirik<sup>3</sup></a>
+    <a href="https://pch-innovations.com/" target="_blank">André Knörig<sup>3</sup></a>
     <a href="https://www.cs.toronto.edu/~fidler/" target="_blank">Sanja Fidler<sup>1,2</sup></a>
-    <a href="" target="_blank">Masha Shugrina<sup>1</sup></a>
+    <a href="https://nv-tlabs.github.io/author/masha-shugrina/" target="_blank">Masha Shugrina<sup>1</sup></a>
   </div>
   <ul class="affil" , style="text-align: center;">
     <li><sup>1</sup>NVIDIA</li>
     <li><sup>2</sup>University of Toronto</li>
-    <li><sup>3</sup>PCH Innovations</li>
+    <li><sup>3</sup><a href="https://pch-innovations.com/" target="_blank">PCH Innovations<sup>3</sup></a></li>
   </ul>
   <!-- <p class="venue"><b>NeurIPS 2021</b></p> -->
   <div style="text-align: center; ">
@@ -199,7 +199,7 @@
       Generative models for 2D images has recently seen tremendous progress in quality, resolution and speed as a result
       of the efficiency of 2D convolutional architectures. However it is difficult to extend this progress into the 3D
       domain since most current 3D representations rely on custom network components. This paper addresses a central
-      question: \textit{Is it possible to directly leverage 2D image generative models to generate 3D shapes instead?}
+      question: Is it possible to directly leverage 2D image generative models to generate 3D shapes instead?
       To answer this, we propose XDGAN, an effective and fast method for applying 2D image GAN architectures to the
       generation of 3D object geometry combined with additional surface attributes, like color textures and normals.
       Specifically, we propose a novel method to convert 3D shapes into compact 1-channel geometry images and leverage
@@ -331,7 +331,7 @@
     <!-- <img width="48%" src="imgs/results_02.gif" style="margin-top: 2em;" /> -->
     <!-- </div> -->
 
-    <p style="line-height: 1.75em; text-align: left; font-size: 12pt; color: #666; text-indent: 2em;">We evaluate
+    <p style="line-height: 1.75em; text-align: left; font-size: 12pt; color: #666; text-indent: 2em;">
       A major advantage of our 3D generative model is that it is based on standard GAN architectures, which allows us to directly apply various techniques developed for image-based GANs. To demonstrate this, we integrate the existing technique of InterFaceGAN [Shen et al.(2020b] in order to find editing directions within our trained latent space. To this end, we first project our training shapes into the latent space \(W\) to create a set of of projected latent vectors \(w\) with lables (e.g. sports-car, SUV, etc.). We then train one linear SVMs for each label using these labeled examples, and use the unit normal vector to the separation hyperplane of the SVM  as an editing direction in latent space. The target attribute of a real or generated 3D shape can then be enhanced or negated by simply steering its latent vector \(w\) along this editing direction. 
     </p>
     <video width="100%" height="auto" controls autoplay muted loop>
